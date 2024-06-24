@@ -1,0 +1,44 @@
+rust-alacritty (0.11.0-4build2) lunar; urgency=medium
+
+  * Rebuild against new RUST ABI.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 25 Feb 2023 10:24:24 +0100
+
+rust-alacritty (0.11.0-4build1) lunar; urgency=medium
+
+  * Rebuild against new librust-thiserror-impl-1.0.38+default-dev.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 25 Feb 2023 07:51:11 +0100
+
+rust-alacritty (0.11.0-4) unstable; urgency=medium
+
+  * Package alacritty 0.11.0 from crates.io using debcargo 2.6.0
+  * Backport patch to stop performing active polling for config file changes.
+
+ -- James McCoy <jamessan@debian.org>  Thu, 02 Feb 2023 08:02:32 -0500
+
+rust-alacritty (0.11.0-3) unstable; urgency=medium
+
+  * Package alacritty 0.11.0 from crates.io using debcargo 2.6.0
+  * Install icon file under the correct name (Alacritty.svg, not
+    alacritty-term.svg).  (Closes: #1025826)
+  * Register as an x-terminal-emulator provider (Closes: #1025859)
+    + Backport patch from upstream to support -T switch
+    + Add Provides: x-terminal-emulator
+    + Add x-terminal-emulator alternative
+
+ -- James McCoy <jamessan@debian.org>  Sun, 11 Dec 2022 13:10:50 -0500
+
+rust-alacritty (0.11.0-2) unstable; urgency=medium
+
+  * Package alacritty 0.11.0 from crates.io using debcargo 2.6.0
+  * Add example config file to package
+
+ -- James McCoy <jamessan@debian.org>  Fri, 09 Dec 2022 09:18:54 -0500
+
+rust-alacritty (0.11.0-1) unstable; urgency=medium
+
+  * Package alacritty 0.11.0 from crates.io using debcargo 2.6.0
+    (Closes: #851639)
+
+ -- James McCoy <jamessan@debian.org>  Sun, 04 Dec 2022 20:09:21 -0500
