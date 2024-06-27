@@ -66,6 +66,10 @@ bindsym $mod+Tab exec --no-startup-id rofi -show window
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# Docking with my monitors
+bindsym $mod+m exec ~/.screenlayout/mount.sh
+bindsym $mod+u exec ~/.screenlayout/unmount.sh
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
