@@ -208,4 +208,4 @@ bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewi
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 #i3lock
-bindsym Ctrl+l exec --no-startup-id i3lock -t -i ~/wallpapers/Toyko\ Night/tokyo-street-photography.png
+bindsym Ctrl+Shift+l exec --no-startup-id i3lock -t -i ~/wallpapers/Toyko\ Night/tokyo-street-photography.png
