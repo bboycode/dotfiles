@@ -145,3 +145,4 @@ export FZF_DEFAULT_OPTS="
 	--color=spinner:#e0af68,info:#9ece6a
 	--color=pointer:#7aa2f7,marker:#bb9af7,prompt:#a9b1d6"
 
+export PATH=$PATH:/usr/local/go/bin
