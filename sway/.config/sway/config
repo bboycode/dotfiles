@@ -22,6 +22,9 @@ set $menu rofi -show drun
 
 # Set browser
 set $browser brave-browser
+set $laptop eDP-1
+set $monitor1 DP-2
+set $monitor2 DP-3
 
 #Gaps
 gaps inner 4px
@@ -35,11 +38,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/wallpapers/Toyko Night/pixel city.jpg fill
-
-# Docking with my monitors
-bindsym $mod+m exec ~/.screenlayout/mount.sh
-bindsym $mod+u exec ~/.screenlayout/unmount.sh
+output * bg ~/wallpapers/japan.jpeg fill
 
 #
 # Example configuration:
@@ -89,7 +88,7 @@ exec swayidle -w \
     bindsym $mod+d exec $menu
 
     #Start file explorer
-    bindsym $mod+Shift+b exec $browser
+    bindsym $mod+b exec $browser
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -193,7 +192,7 @@ exec swayidle -w \
     bindsym $mod+minus scratchpad show
 
     # Screenshots 
-    bindsym Print exec flameshot
+    #bindsym Print exec flameshot
 #
 # Resizing containers:
 #
@@ -227,4 +226,32 @@ bar {
     swaybar_command waybar
 } 
 
+# For touch bpad on laptop
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+
 include /etc/sway/config.d/*
+# exec_always ~/.config/sway/clamshell.sh
+
+bindsym Alt+p exec grim - | wl-copy    
+    
+# capture the specified screen area to clipboard    
+bindsym Shift+Alt+p exec grim -g "$(slurp)" - | wl-copy    
+    
+# capture the focused monitor to clipboard    
+bindsym Shift+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
+
+# Disable laptop screen when lid is closed, enable when open
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+
+bindsym $mod+p exec wlogout
