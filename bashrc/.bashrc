@@ -138,6 +138,7 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
+# Toyko night themed fzf finder.
 export FZF_DEFAULT_OPTS="
 	--color=fg:#a9b1d6,bg:#24283b,hl:#f7768e
 	--color=fg+:#c0caf5,bg+:#414868,hl+:#f7768e
