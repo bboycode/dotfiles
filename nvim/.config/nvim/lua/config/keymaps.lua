@@ -31,5 +31,6 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
+-- arrow Keybinds
 vim.keymap.set("n", "<C-n>", require("arrow.persist").next, { desc = "Goes to next item in arrow list" })
 vim.keymap.set("n", "<C-p>", require("arrow.persist").previous, { desc = "Goes to previous item in arrow list" })
