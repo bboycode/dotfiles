@@ -118,8 +118,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#neofetch
-neofetch
+#fastfetch
+fastfetch
 
 export PATH=$PATH:/home/britton/.spicetify
 export PATH="$PATH":"$HOME/.pub-cache/bin"

@@ -30,6 +30,10 @@ set $monitor2 DP-3
 gaps inner 4px
 gaps outer 4px
 
+# Boarder colour
+client.focused #bb9af7 #bb9af7 #bb9af7 #bb9af7
+client.unfocused #5a3e8e #5a3e8e #5a3e8e #5a3e8e
+
 #borders
 default_border pixel 4
 
@@ -38,7 +42,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/wallpapers/japan.jpeg fill
+output * bg ~/wallpaper/japan.jpeg fill
 
 #
 # Example configuration:
@@ -99,6 +103,9 @@ exec swayidle -w \
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+
+    # logout window
+    bindsym $mod+p exec wlogout
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -254,4 +261,3 @@ bindsym Shift+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] |
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
-bindsym $mod+p exec wlogout

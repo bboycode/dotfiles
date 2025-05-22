@@ -5,7 +5,8 @@
     "modules-left": [
         "sway/workspaces",
         "sway/mode",
-        "sway/scratchpad"
+        "sway/scratchpad",
+	"tray"
     ],
     "modules-center": [
         "clock"
@@ -18,7 +19,7 @@
         "battery",
         "battery#bat2",
         "custom/lock",
-        "custom/power"
+        "custom/power",
     ],
     // Modules configuration
     "sway/workspaces": {
@@ -30,7 +31,7 @@
         "format-icons": {
             "1": "",
             "2": "",
-            "3": "",
+            "3": "",
             "4": "",
             "5": "",
             "urgent": "",
@@ -101,7 +102,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "",
+        "format-wifi": "{essid} ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
@@ -111,14 +112,14 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} ",
         "format-bluetooth-muted": "  {icon} {format_source}",
         "format-muted": "<span size='larger'>󰝟</span>",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "headset": "",
+            "headset": "",
             "default": [
                 "",
                 "",
@@ -130,11 +131,18 @@
     "bluetooth": {
         "on-click": "bluetui"
     },
+ 
+    "tray": {
+    	"icon-size": 21,
+    	"spacing": 10
+    },
+
     "custom/lock": {
         "tooltip": false,
         "on-click": "swaylock",
         "format": ""
     },
+
     "custom/power": {
         "tooltip": false,
         "on-click": "wlogout",
