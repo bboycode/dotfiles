@@ -2,7 +2,7 @@
     background-image: none;
 }
 window {
-    background-image: image(url("/home/britton/wallpapers/japan.jpeg"), url("/home/britton/wallpapers/japan.jpeg"));
+    background-image: image(url("/home/britton/wallpaper/japan.jpeg"), url("/home/britton/wallpaper/japan.jpeg"));
 }
 
 button {
