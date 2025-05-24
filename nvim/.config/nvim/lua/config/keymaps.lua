@@ -34,3 +34,6 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- arrow Keybinds
 vim.keymap.set("n", "<C-n>", require("arrow.persist").next, { desc = "Goes to next item in arrow list" })
 vim.keymap.set("n", "<C-p>", require("arrow.persist").previous, { desc = "Goes to previous item in arrow list" })
+
+-- udate plugins
+vim.keymap.set("n", "<leader>u", "<cmd>Lazy update<CR>", { desc = "Updates lua plugins" })

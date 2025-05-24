@@ -261,3 +261,5 @@ bindsym Shift+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] |
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
+# Auto tiler for sway
+exec ~/.local/bin/autotiling-rs
