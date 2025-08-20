@@ -61,6 +61,14 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
+
+    "backlight/slider": {
+	    "min": 0,
+	    "max": 100,
+	    "orientation": "horizontal",
+	    "device": "intel_backlight"
+    },
+
     "tray": {
         // "icon-size": 21,
         "spacing": 10
