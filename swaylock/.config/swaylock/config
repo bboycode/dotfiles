@@ -1,36 +1,55 @@
-image=~/wallpaper/japan.jpeg
+image=~/wallpaper/rabbits-red.png
 font=JetBrainsMono
 font-size=40
 scaling=fill
+
+# Indicator circle
 indicator-x-position=965
 indicator-y-position=540
 indicator-radius=200
 indicator-thickness=30
-bs-hl-color=ffa066
-caps-lock-bs-hl-color=ffa066
-caps-lock-key-hl-color=957fbb
-inside-color=1f1f28
-inside-clear-color=1f1f28
-inside-caps-lock-color=1f1f28
-inside-ver-color=1f1f28
-inside-wrong-color=1f1f28
-key-hl-color=7fb4ca
-layout-bg-color=1f1f28
-layout-border-color=1f1f28
-layout-text-color=dcd7ba
-line-color=1f1f28
-line-clear-color=1f1f28
-line-caps-lock-color=1f1f28
-line-ver-color=1f1f28
-line-wrong-color=1f1f28
-ring-color=1f1f28
-ring-clear-color=ffa066
-ring-caps-lock-color=1f1f28
-ring-ver-color=98bb6c
-ring-wrong-color=1f1f28
+
+# Highlight colors
+bs-hl-color=5f8787
+caps-lock-bs-hl-color=5f8787
+caps-lock-key-hl-color=6e4c4c
+
+# Inside circle (background of indicator)
+inside-color=000000
+inside-clear-color=000000
+inside-caps-lock-color=000000
+inside-ver-color=000000
+inside-wrong-color=000000
+
+# Key highlight color
+key-hl-color=9b99a3
+
+# Layout box
+layout-bg-color=000000
+layout-border-color=211816
+layout-text-color=c1c1c1
+
+# Lines around the indicator
+line-color=211816
+line-clear-color=5f8787
+line-caps-lock-color=6e4c4c
+line-ver-color=5f8787
+line-wrong-color=fc302e
+
+# Outer ring
+ring-color=211816
+ring-clear-color=5f8787
+ring-caps-lock-color=6e4c4c
+ring-ver-color=5f8787
+ring-wrong-color=fc302e
+
+# Misc
 separator-color=00000000
-text-color=dcd7ba
-text-clear-color=ffa066
-text-caps-lock-color=957fbb
-text-ver-color=dcd7ba
-text-wrong-color=f7768e
+
+# Text colors
+text-color=c1c1c1
+text-clear-color=5f8787
+text-caps-lock-color=6e4c4c
+text-ver-color=c1c1c1
+text-wrong-color=fc302e
+

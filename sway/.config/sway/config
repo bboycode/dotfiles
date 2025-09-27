@@ -30,9 +30,8 @@ set $monitor2 DP-3
 gaps inner 4px
 gaps outer 4px
 
-# Boarder colour
-client.focused #bb9af7 #bb9af7 #bb9af7 #bb9af7
-client.unfocused #5a3e8e #5a3e8e #5a3e8e #5a3e8e
+client.focused   #5f8787 #5f8787 #5f8787 #5f8787
+client.unfocused #333333 #333333 #333333 #333333
 
 #borders
 default_border pixel 4

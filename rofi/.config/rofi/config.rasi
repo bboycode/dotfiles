@@ -8,4 +8,4 @@ configuration{
     disable-history: false;
     sidebar-mode: false;
 }
-@theme "tokyoNight.rasi"
+@theme "black-metal-venom.rasi"
