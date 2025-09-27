@@ -42,7 +42,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/wallpaper/rabbits-red.png fill
+output * bg ~/wallpaper/japan.jpeg fill
 
 #
 # Example configuration:
