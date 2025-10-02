@@ -22,7 +22,7 @@
 
 // defines different aspects of the window
 window {
-    width: 700;
+    width: 1000;
     /*since line wont work with height, i comment it out 
     if you rather control the size via height
     just comment it out */
@@ -33,7 +33,7 @@ window {
     anchor: center;
     transparency: "screenshot";
     border-color: @transparent;   
-    border: 0px;
+    border: 10px;
     border-radius: 6px;
     spacing: 0;
     children: [ mainbox ];

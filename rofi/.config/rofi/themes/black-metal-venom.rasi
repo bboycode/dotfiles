@@ -19,7 +19,7 @@
 
 /* Window container */
 window {
-    width: 700;
+	fullscreen: true;
     orientation: horizontal;
     location: center;
     anchor: center;
@@ -34,7 +34,7 @@ window {
 /* Main layout container */
 mainbox {
     spacing: 0;
-    children: [ inputbar, message, listview ];
+    children: [ inputbar, listview ];
 }
 
 /* Input bar at top */
