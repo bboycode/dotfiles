@@ -10,9 +10,9 @@ indicator-radius=200
 indicator-thickness=30
 
 # Highlight colors
-bs-hl-color=5f8787
-caps-lock-bs-hl-color=5f8787
-caps-lock-key-hl-color=6e4c4c
+bs-hl-color=a31e00
+caps-lock-bs-hl-color=a31e00
+caps-lock-key-hl-color=d12600
 
 # Inside circle (background of indicator)
 inside-color=000000
@@ -31,16 +31,16 @@ layout-text-color=c1c1c1
 
 # Lines around the indicator
 line-color=211816
-line-clear-color=5f8787
-line-caps-lock-color=6e4c4c
-line-ver-color=5f8787
+line-clear-color=a31e00
+line-caps-lock-color=d12600
+line-ver-color=a31e00
 line-wrong-color=fc302e
 
 # Outer ring
 ring-color=211816
-ring-clear-color=5f8787
+ring-clear-color=a31e00
 ring-caps-lock-color=6e4c4c
-ring-ver-color=5f8787
+ring-ver-color=a31e00
 ring-wrong-color=fc302e
 
 # Misc
