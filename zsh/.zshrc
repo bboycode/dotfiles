@@ -1,17 +1,19 @@
-# -------------------------------
-# Powerlevel10k Instant Prompt
-# MUST stay near the top
-# -------------------------------
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # -------------------------------
+# Powerlevel10k Instant Prompt
+# MUST stay near the top
+# -------------------------------
+
+# -------------------------------
 # Theme & plugins (after instant prompt)
 # -------------------------------
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/zsh_plugins/powerlevel10k/powerlevel10k.zsh-theme
 source ~/zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -70,13 +72,15 @@ unsetopt beep
 # -------------------------------
 # Aliases
 # -------------------------------
-alias ll='eza -la'
+alias ls='exa'
+alias ll='exa -la'
 alias la='ls -A'
 alias l='ls -CF'
 alias cat='batcat'
 alias update='sudo apt update && sudo apt upgrade'
 
 
- . "$HOME/.cargo/env"
-
- export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$HOME/.local/bin:$PATH
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
