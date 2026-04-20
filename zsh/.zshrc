@@ -74,9 +74,22 @@ alias ll='eza -la'
 alias la='ls -A'
 alias l='ls -CF'
 alias cat='batcat'
-alias update='sudo apt update && sudo apt upgrade'
+alias update='sudo apt update && sudo apt upgrade -y'
 
+# -------------------------------
+# Keymapings
+# -------------------------------
+tmux_sessionizer_widget() {
+  tmux-sessionizer
+}
+zle -N tmux_sessionizer_widget
+bindkey '^F' tmux_sessionizer_widget
 
  . "$HOME/.cargo/env"
 
- export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/.local/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
