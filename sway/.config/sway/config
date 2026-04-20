@@ -21,7 +21,7 @@ set $term kitty
 set $menu rofi -show drun
 
 # Set browser
-set $browser brave-browser
+set $browser firefox
 set $laptop eDP-1
 set $monitor1 DP-2
 set $monitor2 DP-3
